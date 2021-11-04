@@ -13,36 +13,36 @@
 </head>
 
 <body>
-    <div class="calculatrice m-auto">
+    <div class="calculatrice bg-dark">
         <div class="border border-dark m-auto fs-1">
-            <input type="text" class="calc_btn col-12 border border-white text-end" value="" id="valeur1" />
-            <input type="text" class="calc_btn col-12 border border-white text-end" value="" id="operateur" />
-            <input type="text" class="calc_btn col-12 border border-white text-end" value="" id="valeur2" />
-            <input type="text" class="calc_btn col-12 border border-white text-end" value="" id="valeur3" />
+            <input type="text" class="calc_btn col-12 border border-white text-end ecran" value="" id="valeur1" />
+            <input type="text" class="calc_btn col-12 border border-white text-end ecran" value="" id="operateur" />
+            <input type="text" class="calc_btn col-12 border border-white text-end ecran" value="" id="valeur2" />
+            <input type="text" class="calc_btn col-12 border border-white text-end ecran" value="" id="valeur3" />
         </div>
         <div class="m-auto">
-            <div class=" row my-1 text-center m-auto fs-1 ">
+            <div class=" row my-1 text-center m-auto fs-1 border border-dark ">
                 <input type="button" id="nb7" class="calc_btn col-3 " value="7" onclick="displayNumber(7)" />
                 <input type="button" id="nb8" class="calc_btn col-3 " value="8" onclick="displayNumber(8)" />
                 <input type="button" id="nb9" class="calc_btn col-3 " value="9" onclick="displayNumber(9)" />
                 <input type="button" id="plus" class="calc_btn col-3 bgbutton" value="+"
                     onclick="displayOperator('+')" />
             </div>
-            <div class=" row my-1 text-center m-auto fs-1">
+            <div class=" row my-1 text-center m-auto fs-1 border border-dark">
                 <input type="button" id="nb4" class="calc_btn col-3 " value="4" onclick="displayNumber(4)" />
                 <input type="button" id="nb5" class="calc_btn col-3 " value="5" onclick="displayNumber(5)" />
                 <input type="button" id="nb6" class="calc_btn col-3 " value="6" onclick="displayNumber(6)" />
                 <input type="button" id="moins" class="calc_btn col-3 bgbutton" value="-"
                     onclick="displayOperator('-')" />
             </div>
-            <div class=" row my-1 text-center m-auto fs-1">
+            <div class=" row my-1 text-center m-auto fs-1 border border-dark">
                 <input type="button" id="nb1" class="calc_btn col-3 " value="1" onclick="displayNumber(1)" />
                 <input type="button" id="nb2" class="calc_btn col-3 " value="2" onclick="displayNumber(2)" />
                 <input type="button" id="nb3" class="calc_btn col-3 " value="3" onclick="displayNumber(3)" />
                 <input type="button" id="multiplier" class="calc_btn col-3 bgbutton" value="X"
                     onclick="displayOperator('X')" />
             </div>
-            <div class=" row my-1 text-center m-auto fs-1">
+            <div class=" row my-1 text-center m-auto fs-1 border border-dark">
                 <input type="button" id="point" class="calc_btn col-3 bgbutton" value="." onclick="displayPoint()" />
                 <input type="button" id="nb0" class="calc_btn col-3 " value="0" onclick="displayNumber(0)" />
                 <input type="button" id="clean" class="calc_btn col-3 bgbutton bg-danger" value="C" onclick="reset()" />
@@ -50,8 +50,9 @@
                     onclick="displayOperator('/')" />
             </div>
 
-            <div class=" row text-center m-auto fs-1">
-                <input type="button" class="calc_btn col-12 lololo" id="egale" value="=" />
+            <div class=" row text-center m-auto fs-1 border border-dark">
+                <input type="button" class="calc_btn col-12 text-center" id="resultat" value="="
+                    onclick="displayResult()" />
             </div>
         </div>
     </div>

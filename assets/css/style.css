@@ -1,3 +1,20 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+.calculatrice {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: black solid 2px;
+    border-radius: 1%;
+}
+
 .bgbutton {
     background-color: blue;
     color: white;
